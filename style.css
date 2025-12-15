@@ -12,18 +12,51 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
     }
     header {
   height: 20vh;
   min-height: 60px; /* ensure it doesn't get too small */
   max-height: 120px; /* optional max limit */
   background-color: #000000;
-  color: rgb(134, 211, 210);
+  color: blanchedalmond;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
 }
+   header h1 {
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+
+header img{
+   height: 10vh;
+}
+.instalogoanchor{
+  border: solid 5px blanchedalmond;
+  border-radius: 1em;
+  margin: 3em;
+}
+
+/* scroll */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+/* ALL LINKS */
+
+.verity{
+  color: #666;
+    text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+    border: 5px solid #94a2b5;
+    border-radius: 15px;
+  padding: 10px;
+    
+
+}
+
 .parent{
      display: flex;
   height: calc(100vh - 20vh );
@@ -37,13 +70,23 @@
   background-color: rgb(127, 218, 217);
   height: auto; /* let it grow as per content */
   overflow-y: auto; /* scroll if needed */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5px;
 }
 
-    header h1 {
-      font-weight: 800;
-      letter-spacing: 2px;
-    }
+ 
     
+ .sidebar div {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+   align-items: center;
+ }
+
+  
+
     /* Gallery styles */
     .gallery {
             
@@ -84,6 +127,16 @@
       padding: 1rem;
       text-align: center;
       background-color: rgb(134, 211, 210);
+    }
+
+    #couple{
+            background-color: rgb(240, 195, 231);
+
+    }
+    #couple .art-info{
+      padding: 1rem;
+      text-align: center;
+      background-color: rgb(240, 136, 219);
     }
     .art-info h3 {
       font-size: 1.1rem;
